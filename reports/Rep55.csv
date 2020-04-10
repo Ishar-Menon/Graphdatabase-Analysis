@@ -1,0 +1,501 @@
+
+AMDuProf PROFILE REPORT
+
+EXECUTION
+Target Path:
+Command Line Arguments:
+Working Directory:
+Environment Variables:
+CPU Details:,"Family(0x17), Model(0x1), Number of Cores(96)"
+Operating System:,"LinuxUbuntu 18.04.2 LTS-64 (Kernel: 4.15.0)"
+
+PROFILE DETAILS
+Profile Session Type:,"Investigate Data Access"
+Profile Scope:,"System-Wide"
+CPU Mask:,"0xFFFFFFFF"
+CPU Affinity Mask:,"0xFFFFFFFFFFFFFFFFFFFFFFFF"
+Profile Start Time:,"Apr-10-2020_23-29-29"
+Profile End Time:,"Apr-10-2020_23-29-59"
+Profile Duration:,"30 seconds"
+Data Folder:,"/tmp/neo4j_bench/q5/five"
+Call Stack Sampling:,"False"
+
+Monitored Events:,Name,Interval,Unitmask,User,OS
+,"Misaligned loads (PMCx047)",25000,0,True,True
+,"Cycles not in Halt (PMCx076)",250000,0,True,True
+,"Retired Instructions (PMCx0C0)",250000,0,True,True
+,"LS Dispatch (PMCx029)",250000,7,True,True
+,"Data Cache Refills from System (PMCx043)",25000,11,True,True
+,"Requests to L2 Group1 (PMCx060)",25000,c8,True,True
+,"L1 DTLB Miss (PMCx045)",25000,ff,True,True
+
+"5 HOTTEST FUNCTIONS (Sort Event - CPU clocks)"
+FUNCTION,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"acpi_idle_do_entry",0,19200,293,1147,150,300,12,3.9147,0.1024,0.0262,0.0153,65.5290,3.9147,0.0041,0.0512,0.0000,0.0000
+"native_write_msr",0,1186,174,181,3,30,1,1.0402,0.0172,0.0166,0.1467,6.8161,1.0402,0.0006,0.0017,0.0000,0.0000
+"native_read_msr",0,589,38,72,13,41,4,1.8947,0.1079,0.0569,0.0645,15.5000,1.8947,0.0105,0.0342,0.0000,0.0000
+"menu_select",0,449,329,128,17,86,17,0.3891,0.0261,0.0672,0.7327,1.3647,0.3891,0.0052,0.0052,0.0000,0.0000
+"__tick_nohz_idle_enter",0,385,199,135,11,60,2,0.6784,0.0302,0.0444,0.5169,1.9347,0.6784,0.0010,0.0055,0.0000,0.0000
+
+
+"ALL PROCESSES (Sort Event - CPU clocks)"
+PROCESS,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+[kernel] (PID - 0),0,27960,3114,3550,356,1322,153,1.1400,0.0425,0.0372,0.1114,8.9788,1.1400,0.0049,0.0114,0.0000,0.0000
+/usr/bin/containerd (PID - 2654),0,65,14,13,1,12,1,0.9286,0.0857,0.0923,0.2154,4.6429,0.9286,0.0071,0.0071,0.0000,0.0000
+/usr/bin/dockerd (PID - 4140),0,16,9,4,1,5,0,0.4444,0.0556,0.1250,0.5625,1.7778,0.4444,0.0000,0.0111,0.0000,0.0000
+/snap/core/8935/usr/lib/snapd/snapd (PID - 36437),0,5,27,13,0,5,1,0.4815,0.0185,0.0385,5.4000,0.1852,0.4815,0.0037,0.0000,0.0000,0.0000
+/usr/lib/accountsservice/accounts-daemon (PID - 2008),0,4,3,1,0,1,0,0.3333,0.0333,0.1000,0.7500,1.3333,0.3333,0.0000,0.0000,0.0000,0.0000
+kworker/0:2 (PID - 72142),0,3,2,0,0,1,1,0.0000,0.0500,0.0000,0.6667,1.5000,0.0000,0.0500,0.0000,0.0000,0.0000
+kworker/9:1 (PID - 71282),0,3,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+watchdog/4 (PID - 33),0,2,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+kworker/22:2 (PID - 71257),0,2,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+watchdog/30 (PID - 193),0,2,0,1,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+
+PROFILE REPORT FOR PROCESS - [kernel] (PID - 0)
+PROCESS,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"[kernel]",0,27960,3114,3550,356,1322,153,1.1400,0.0425,0.0372,0.1114,8.9788,1.1400,0.0049,0.0114,0.0000,0.0000
+
+THREAD SUMMARY
+THREAD,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"Thread-0",0,27960,3114,3550,356,1322,153,1.1400,0.0425,0.0372,0.1114,8.9788,1.1400,0.0049,0.0114,0.0000,0.0000
+
+
+MODULE SUMMARY
+MODULE,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"[kernel.kallsyms]_text",0,27960,3112,3549,356,1322,153,1.1404,0.0425,0.0372,0.1113,8.9846,1.1404,0.0049,0.0114,0.0000,0.0000
+"/lib/modules/4.15.0-91-generic/kernel/arch/x86/kvm/kvm.ko",0,0,2,1,0,0,0,0.5000,0.0000,0.0000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000
+
+
+FUNCTION SUMMARY
+FUNCTION,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"acpi_idle_do_entry",0,19200,293,1147,150,300,12,3.9147,0.1024,0.0262,0.0153,65.5290,3.9147,0.0041,0.0512,0.0000,0.0000
+"native_write_msr",0,1186,174,181,3,30,1,1.0402,0.0172,0.0166,0.1467,6.8161,1.0402,0.0006,0.0017,0.0000,0.0000
+"native_read_msr",0,589,38,72,13,41,4,1.8947,0.1079,0.0569,0.0645,15.5000,1.8947,0.0105,0.0342,0.0000,0.0000
+"menu_select",0,449,329,128,17,86,17,0.3891,0.0261,0.0672,0.7327,1.3647,0.3891,0.0052,0.0052,0.0000,0.0000
+"__tick_nohz_idle_enter",0,385,199,135,11,60,2,0.6784,0.0302,0.0444,0.5169,1.9347,0.6784,0.0010,0.0055,0.0000,0.0000
+"apic_timer_interrupt",0,319,51,120,1,13,22,2.3529,0.0255,0.0108,0.1599,6.2549,2.3529,0.0431,0.0020,0.0000,0.0000
+"__x86_indirect_thunk_rax",0,309,54,71,17,29,4,1.3148,0.0537,0.0408,0.1748,5.7222,1.3148,0.0074,0.0315,0.0000,0.0000
+"ktime_get",0,230,71,85,6,58,13,1.1972,0.0817,0.0682,0.3087,3.2394,1.1972,0.0183,0.0085,0.0000,0.0000
+"read_tsc",0,229,37,61,9,38,2,1.6486,0.1027,0.0623,0.1616,6.1892,1.6486,0.0054,0.0243,0.0000,0.0000
+"acpi_idle_enter",0,209,86,49,0,30,5,0.5698,0.0349,0.0612,0.4115,2.4302,0.5698,0.0058,0.0000,0.0000,0.0000
+
+Function Detail Data
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"acpi_idle_do_entry" (BINARY FILE NOT FOUND),0,19200,293,1147,150,300,12,3.915,0.102,0.026,0.015,65.529,3.915,0.004,0.051,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"native_write_msr" (BINARY FILE NOT FOUND),0,1186,174,181,3,30,1,1.040,0.017,0.017,0.147,6.816,1.040,0.001,0.002,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"native_read_msr" (BINARY FILE NOT FOUND),0,589,38,72,13,41,4,1.895,0.108,0.057,0.065,15.500,1.895,0.011,0.034,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"menu_select" (BINARY FILE NOT FOUND),0,449,329,128,17,86,17,0.389,0.026,0.067,0.733,1.365,0.389,0.005,0.005,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"__tick_nohz_idle_enter" (BINARY FILE NOT FOUND),0,385,199,135,11,60,2,0.678,0.030,0.044,0.517,1.935,0.678,0.001,0.006,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"apic_timer_interrupt" (BINARY FILE NOT FOUND),0,319,51,120,1,13,22,2.353,0.025,0.011,0.160,6.255,2.353,0.043,0.002,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"__x86_indirect_thunk_rax" (BINARY FILE NOT FOUND),0,309,54,71,17,29,4,1.315,0.054,0.041,0.175,5.722,1.315,0.007,0.031,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"ktime_get" (BINARY FILE NOT FOUND),0,230,71,85,6,58,13,1.197,0.082,0.068,0.309,3.239,1.197,0.018,0.008,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"read_tsc" (BINARY FILE NOT FOUND),0,229,37,61,9,38,2,1.649,0.103,0.062,0.162,6.189,1.649,0.005,0.024,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"acpi_idle_enter" (BINARY FILE NOT FOUND),0,209,86,49,0,30,5,0.570,0.035,0.061,0.411,2.430,0.570,0.006,0.000,0.000,0.000
+
+
+PROFILE REPORT FOR PROCESS - /usr/bin/containerd (PID - 2654)
+PROCESS,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"/usr/bin/containerd",0,65,14,13,1,12,1,0.9286,0.0857,0.0923,0.2154,4.6429,0.9286,0.0071,0.0071,0.0000,0.0000
+
+THREAD SUMMARY
+THREAD,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"Thread-4629",0,10,2,3,0,4,0,1.5000,0.2000,0.1333,0.2000,5.0000,1.5000,0.0000,0.0000,0.0000,0.0000
+"Thread-12453",0,10,0,1,0,1,0,0.0000,0.0000,0.1000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"Thread-2704",0,7,0,1,0,1,0,0.0000,0.0000,0.1000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"Thread-25184",0,7,3,1,0,1,1,0.3333,0.0333,0.1000,0.4286,2.3333,0.3333,0.0333,0.0000,0.0000,0.0000
+"Thread-2753",0,6,2,2,0,1,0,1.0000,0.0500,0.0500,0.3333,3.0000,1.0000,0.0000,0.0000,0.0000,0.0000
+"Thread-2696",0,5,4,3,0,1,0,0.7500,0.0250,0.0333,0.8000,1.2500,0.7500,0.0000,0.0000,0.0000,0.0000
+"Thread-2711",0,5,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"Thread-4634",0,5,0,1,0,1,0,0.0000,0.0000,0.1000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"Thread-8423",0,5,3,0,0,2,0,0.0000,0.0667,0.0000,0.6000,1.6667,0.0000,0.0000,0.0000,0.0000,0.0000
+"Thread-8952",0,3,0,1,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+
+MODULE SUMMARY
+MODULE,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"/usr/bin/containerd",0,36,9,8,0,4,1,0.8889,0.0444,0.0500,0.2500,4.0000,0.8889,0.0111,0.0000,0.0000,0.0000
+"[kernel.kallsyms]_text",0,26,5,5,1,8,0,1.0000,0.1600,0.1600,0.1923,5.2000,1.0000,0.0000,0.0200,0.0000,0.0000
+"/lib/modules/4.15.0-91-generic/vdso/vdso64.so",0,3,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+
+FUNCTION SUMMARY
+FUNCTION,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"runtime.scanobject",0,9,3,3,0,1,0,1.0000,0.0333,0.0333,0.3333,3.0000,1.0000,0.0000,0.0000,0.0000,0.0000
+"runtime.greyobject",0,7,2,1,0,1,0,0.5000,0.0500,0.1000,0.2857,3.5000,0.5000,0.0000,0.0000,0.0000,0.0000
+"runtime.gcDrain",0,6,0,2,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"find_busiest_group",0,5,3,1,0,2,0,0.3333,0.0667,0.2000,0.6000,1.6667,0.3333,0.0000,0.0000,0.0000,0.0000
+"idle_cpu",0,4,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"runtime.heapBitsForObject",0,4,1,1,0,0,0,1.0000,0.0000,0.0000,0.2500,4.0000,1.0000,0.0000,0.0000,0.0000,0.0000
+"__vdso_clock_gettime",0,3,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"update_blocked_averages",0,3,1,1,0,2,0,1.0000,0.2000,0.2000,0.3333,3.0000,1.0000,0.0000,0.0000,0.0000,0.0000
+"decay_load",0,2,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"runtime.(*lfstack).pop",0,2,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+Function Detail Data
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"runtime.scanobject" (DEBUG INFO NOT FOUND),0,9,3,3,0,1,0,1.000,0.033,0.033,0.333,3.000,1.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"runtime.greyobject" (DEBUG INFO NOT FOUND),0,7,2,1,0,1,0,0.500,0.050,0.100,0.286,3.500,0.500,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"runtime.gcDrain" (DEBUG INFO NOT FOUND),0,6,0,2,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"find_busiest_group" (BINARY FILE NOT FOUND),0,5,3,1,0,2,0,0.333,0.067,0.200,0.600,1.667,0.333,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"idle_cpu" (BINARY FILE NOT FOUND),0,4,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"runtime.heapBitsForObject" (DEBUG INFO NOT FOUND),0,4,1,1,0,0,0,1.000,0.000,0.000,0.250,4.000,1.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"__vdso_clock_gettime" (DEBUG INFO NOT FOUND),0,3,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"update_blocked_averages" (BINARY FILE NOT FOUND),0,3,1,1,0,2,0,1.000,0.200,0.200,0.333,3.000,1.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"decay_load" (BINARY FILE NOT FOUND),0,2,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"runtime.(*lfstack).pop" (DEBUG INFO NOT FOUND),0,2,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+
+PROFILE REPORT FOR PROCESS - /usr/bin/dockerd (PID - 4140)
+PROCESS,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"/usr/bin/dockerd",0,16,9,4,1,5,0,0.4444,0.0556,0.1250,0.5625,1.7778,0.4444,0.0000,0.0111,0.0000,0.0000
+
+THREAD SUMMARY
+THREAD,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"Thread-4493",0,10,6,2,0,2,0,0.3333,0.0333,0.1000,0.6000,1.6667,0.3333,0.0000,0.0000,0.0000,0.0000
+"Thread-4344",0,3,3,2,1,3,0,0.6667,0.1000,0.1500,1.0000,1.0000,0.6667,0.0000,0.0333,0.0000,0.0000
+"Thread-4507",0,3,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+
+MODULE SUMMARY
+MODULE,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"[kernel.kallsyms]_text",0,11,7,2,0,4,0,0.2857,0.0571,0.2000,0.6364,1.5714,0.2857,0.0000,0.0000,0.0000,0.0000
+"/usr/bin/dockerd",0,5,2,2,1,1,0,1.0000,0.0500,0.0500,0.4000,2.5000,1.0000,0.0000,0.0500,0.0000,0.0000
+
+
+FUNCTION SUMMARY
+FUNCTION,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"find_busiest_group",0,5,1,2,0,0,0,2.0000,0.0000,0.0000,0.2000,5.0000,2.0000,0.0000,0.0000,0.0000,0.0000
+"try_to_wake_up",0,2,1,0,0,0,0,0.0000,0.0000,0.0000,0.5000,2.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"update_blocked_averages",0,2,0,0,0,2,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"runtime.exitsyscallfast",0,1,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"runtime.runqempty",0,1,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"runtime.futex",0,1,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"sync.(*Mutex).Lock",0,1,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"runtime.findrunnable",0,1,1,1,0,0,0,1.0000,0.0000,0.0000,1.0000,1.0000,1.0000,0.0000,0.0000,0.0000,0.0000
+"cpuacct_charge",0,1,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"idle_cpu",0,1,2,0,0,0,0,0.0000,0.0000,0.0000,2.0000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+Function Detail Data
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"find_busiest_group" (BINARY FILE NOT FOUND),0,5,1,2,0,0,0,2.000,0.000,0.000,0.200,5.000,2.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"try_to_wake_up" (BINARY FILE NOT FOUND),0,2,1,0,0,0,0,0.000,0.000,0.000,0.500,2.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"update_blocked_averages" (BINARY FILE NOT FOUND),0,2,0,0,0,2,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"runtime.exitsyscallfast" (DEBUG INFO NOT FOUND),0,1,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"runtime.runqempty" (DEBUG INFO NOT FOUND),0,1,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"runtime.futex" (DEBUG INFO NOT FOUND),0,1,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"sync.(*Mutex).Lock" (DEBUG INFO NOT FOUND),0,1,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"runtime.findrunnable" (DEBUG INFO NOT FOUND),0,1,1,1,0,0,0,1.000,0.000,0.000,1.000,1.000,1.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"cpuacct_charge" (BINARY FILE NOT FOUND),0,1,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"idle_cpu" (BINARY FILE NOT FOUND),0,1,2,0,0,0,0,0.000,0.000,0.000,2.000,0.500,0.000,0.000,0.000,0.000,0.000
+
+
+PROFILE REPORT FOR PROCESS - /snap/core/8935/usr/lib/snapd/snapd (PID - 36437)
+PROCESS,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"/snap/core/8935/usr/lib/snapd/snapd",0,5,27,13,0,5,1,0.4815,0.0185,0.0385,5.4000,0.1852,0.4815,0.0037,0.0000,0.0000,0.0000
+
+THREAD SUMMARY
+THREAD,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"Thread-37359",0,2,1,1,0,0,0,1.0000,0.0000,0.0000,0.5000,2.0000,1.0000,0.0000,0.0000,0.0000,0.0000
+"Thread-41462",0,2,8,3,0,1,0,0.3750,0.0125,0.0333,4.0000,0.2500,0.3750,0.0000,0.0000,0.0000,0.0000
+"Thread-45466",0,1,4,3,0,0,0,0.7500,0.0000,0.0000,4.0000,0.2500,0.7500,0.0000,0.0000,0.0000,0.0000
+"Thread-3297",0,0,2,1,0,1,0,0.5000,0.0500,0.1000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000
+"Thread-37370",0,0,2,1,0,1,0,0.5000,0.0500,0.1000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000
+"Thread-37380",0,0,2,0,0,1,0,0.0000,0.0500,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"Thread-39077",0,0,0,1,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"Thread-39984",0,0,1,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"Thread-41360",0,0,2,1,0,0,0,0.5000,0.0000,0.0000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000
+"Thread-44686",0,0,5,2,0,1,1,0.4000,0.0200,0.0500,0.0000,0.0000,0.4000,0.0200,0.0000,0.0000,0.0000
+
+
+MODULE SUMMARY
+MODULE,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"/snap/core/8935/usr/lib/snapd/snapd",0,3,22,10,0,5,1,0.4545,0.0227,0.0500,7.3333,0.1364,0.4545,0.0045,0.0000,0.0000,0.0000
+"[kernel.kallsyms]_text",0,2,5,3,0,0,0,0.6000,0.0000,0.0000,2.5000,0.4000,0.6000,0.0000,0.0000,0.0000,0.0000
+
+
+FUNCTION SUMMARY
+FUNCTION,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"find_busiest_group",0,1,1,0,0,0,0,0.0000,0.0000,0.0000,1.0000,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"snapd!0x56415be448bd",0,1,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"apic_timer_interrupt",0,1,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"snapd!0x56415be4277d",0,1,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"snapd!0x56415be5e4b9",0,1,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"snapd!0x56415be5fa88",0,0,0,0,0,1,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"snapd!0x56415be44bc5",0,0,3,1,0,0,1,0.3333,0.0000,0.0000,0.0000,0.0000,0.3333,0.0333,0.0000,0.0000,0.0000
+"snapd!0x56415be44c12",0,0,1,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"snapd!0x56415be44e93",0,0,0,1,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"snapd!0x56415be45002",0,0,3,2,0,0,0,0.6667,0.0000,0.0000,0.0000,0.0000,0.6667,0.0000,0.0000,0.0000,0.0000
+
+Function Detail Data
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"find_busiest_group" (BINARY FILE NOT FOUND),0,1,1,0,0,0,0,0.000,0.000,0.000,1.000,1.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"snapd!0x56415be448bd" (DEBUG INFO NOT FOUND),0,1,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"apic_timer_interrupt" (BINARY FILE NOT FOUND),0,1,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"snapd!0x56415be4277d" (DEBUG INFO NOT FOUND),0,1,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"snapd!0x56415be5e4b9" (DEBUG INFO NOT FOUND),0,1,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"snapd!0x56415be5fa88" (DEBUG INFO NOT FOUND),0,0,0,0,0,1,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"snapd!0x56415be44bc5" (DEBUG INFO NOT FOUND),0,0,3,1,0,0,1,0.333,0.000,0.000,0.000,0.000,0.333,0.033,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"snapd!0x56415be44c12" (DEBUG INFO NOT FOUND),0,0,1,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"snapd!0x56415be44e93" (DEBUG INFO NOT FOUND),0,0,0,1,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"snapd!0x56415be45002" (DEBUG INFO NOT FOUND),0,0,3,2,0,0,0,0.667,0.000,0.000,0.000,0.000,0.667,0.000,0.000,0.000,0.000
+
+
+PROFILE REPORT FOR PROCESS - /usr/lib/accountsservice/accounts-daemon (PID - 2008)
+PROCESS,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"/usr/lib/accountsservice/accounts-daemon",0,4,3,1,0,1,0,0.3333,0.0333,0.1000,0.7500,1.3333,0.3333,0.0000,0.0000,0.0000,0.0000
+
+THREAD SUMMARY
+THREAD,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"Thread-2075",0,4,3,1,0,1,0,0.3333,0.0333,0.1000,0.7500,1.3333,0.3333,0.0000,0.0000,0.0000,0.0000
+
+
+MODULE SUMMARY
+MODULE,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"[kernel.kallsyms]_text",0,4,3,0,0,1,0,0.0000,0.0333,0.0000,0.7500,1.3333,0.0000,0.0000,0.0000,0.0000,0.0000
+"/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4 (deleted)",0,0,0,1,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+
+FUNCTION SUMMARY
+FUNCTION,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"find_busiest_group",0,2,2,0,0,0,0,0.0000,0.0000,0.0000,1.0000,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"idle_cpu",0,1,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"set_root",0,1,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"update_blocked_averages",0,0,1,0,0,1,0,0.0000,0.1000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"libglib-2.0.so.0.5600.4 (deleted)!0x7f13452b1cc0",0,0,0,1,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+Function Detail Data
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"find_busiest_group" (BINARY FILE NOT FOUND),0,2,2,0,0,0,0,0.000,0.000,0.000,1.000,1.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"idle_cpu" (BINARY FILE NOT FOUND),0,1,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"set_root" (BINARY FILE NOT FOUND),0,1,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"update_blocked_averages" (BINARY FILE NOT FOUND),0,0,1,0,0,1,0,0.000,0.100,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"libglib-2.0.so.0.5600.4 (deleted)!0x7f13452b1cc0" (BINARY FILE NOT FOUND),0,0,0,1,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+
+PROFILE REPORT FOR PROCESS - kworker/0:2 (PID - 72142)
+PROCESS,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"kworker/0:2",0,3,2,0,0,1,1,0.0000,0.0500,0.0000,0.6667,1.5000,0.0000,0.0500,0.0000,0.0000,0.0000
+
+THREAD SUMMARY
+THREAD,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"Thread-72142",0,3,2,0,0,1,1,0.0000,0.0500,0.0000,0.6667,1.5000,0.0000,0.0500,0.0000,0.0000,0.0000
+
+
+MODULE SUMMARY
+MODULE,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"[kernel.kallsyms]_text",0,3,2,0,0,1,1,0.0000,0.0500,0.0000,0.6667,1.5000,0.0000,0.0500,0.0000,0.0000,0.0000
+
+
+FUNCTION SUMMARY
+FUNCTION,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"find_busiest_group",0,1,2,0,0,0,0,0.0000,0.0000,0.0000,2.0000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000
+"need_update",0,1,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"_find_next_bit",0,1,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"idle_cpu",0,0,0,0,0,1,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"update_curr",0,0,0,0,0,0,1,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+Function Detail Data
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"find_busiest_group" (BINARY FILE NOT FOUND),0,1,2,0,0,0,0,0.000,0.000,0.000,2.000,0.500,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"need_update" (BINARY FILE NOT FOUND),0,1,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"_find_next_bit" (BINARY FILE NOT FOUND),0,1,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"idle_cpu" (BINARY FILE NOT FOUND),0,0,0,0,0,1,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"update_curr" (BINARY FILE NOT FOUND),0,0,0,0,0,0,1,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+
+PROFILE REPORT FOR PROCESS - kworker/9:1 (PID - 71282)
+PROCESS,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"kworker/9:1",0,3,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+THREAD SUMMARY
+THREAD,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"Thread-71282",0,3,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+
+MODULE SUMMARY
+MODULE,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"[kernel.kallsyms]_text",0,3,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+
+FUNCTION SUMMARY
+FUNCTION,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"find_busiest_group",0,2,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"_cond_resched",0,1,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+Function Detail Data
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"find_busiest_group" (BINARY FILE NOT FOUND),0,2,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"_cond_resched" (BINARY FILE NOT FOUND),0,1,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+
+PROFILE REPORT FOR PROCESS - watchdog/4 (PID - 33)
+PROCESS,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"watchdog/4",0,2,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+THREAD SUMMARY
+THREAD,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"Thread-33",0,2,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+
+MODULE SUMMARY
+MODULE,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"[kernel.kallsyms]_text",0,2,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+
+FUNCTION SUMMARY
+FUNCTION,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"idle_cpu",0,1,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"update_blocked_averages",0,1,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+Function Detail Data
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"idle_cpu" (BINARY FILE NOT FOUND),0,1,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"update_blocked_averages" (BINARY FILE NOT FOUND),0,1,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+
+PROFILE REPORT FOR PROCESS - kworker/22:2 (PID - 71257)
+PROCESS,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"kworker/22:2",0,2,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+THREAD SUMMARY
+THREAD,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"Thread-71257",0,2,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+
+MODULE SUMMARY
+MODULE,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"[kernel.kallsyms]_text",0,2,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+
+FUNCTION SUMMARY
+FUNCTION,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"find_busiest_group",0,1,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"mutex_unlock",0,1,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+Function Detail Data
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"find_busiest_group" (BINARY FILE NOT FOUND),0,1,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"mutex_unlock" (BINARY FILE NOT FOUND),0,1,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+
+PROFILE REPORT FOR PROCESS - watchdog/30 (PID - 193)
+PROCESS,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"watchdog/30",0,2,0,1,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+THREAD SUMMARY
+THREAD,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"Thread-193",0,2,0,1,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+
+MODULE SUMMARY
+MODULE,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"[kernel.kallsyms]_text",0,2,0,1,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+
+FUNCTION SUMMARY
+FUNCTION,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"find_busiest_group",0,1,0,1,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+"dbs_update_util_handler",0,1,0,0,0,0,0,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+
+Function Detail Data
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"find_busiest_group" (BINARY FILE NOT FOUND),0,1,0,1,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+
+Function,"Misalign access","CPU clocks","Ret inst","DC accesses","DC refills L2/sys","DC misses","DTLB L1M","DC access rate","DC miss rate","DC miss ratio","IPC","CPI","DTLB request rate","DTLB L1M rate","DC refill rate","Misalign rate","Misalign ratio"
+"dbs_update_util_handler" (BINARY FILE NOT FOUND),0,1,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+

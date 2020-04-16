@@ -15,7 +15,7 @@ with driver.session() as session:
     result = session.run(queries[int(sys.argv[1]) - 1])
 
 # Print result
-# records = result.records()
+records = result.records()
 
-# for i in records:
+#for i in records:
 #         print(i)

@@ -1,8 +1,13 @@
+#!/usr/bin/env python3
 
 # Set affinity of all processes to cores 32 - 95
 
 import os
 # Retrieve all user's
+
+#Remove all pre-existing pid's
+os.system('sudo rm usr_file')
+os.system('sudo rm upid_file')
 os.system('cut -d: -f1 /etc/passwd > usr_file')
 k = open("usr_file","r")
 udata = k.read()

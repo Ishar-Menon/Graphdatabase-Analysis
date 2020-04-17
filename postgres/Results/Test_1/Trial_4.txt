@@ -1,0 +1,26 @@
+
+ Performance counter stats for process id '67269':
+
+          7.437864      task-clock (msec)         #    0.000 CPUs utilized          
+                 4      context-switches          #    0.538 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               657      page-faults               #    0.088 M/sec                  
+         86,45,005      cycles                    #    1.162 GHz                      (26.65%)
+         81,72,473      instructions              #    0.95  insn per cycle                                            
+          6,01,076      cache-references          #   80.813 M/sec                  
+   <not supported>      cache-misses                                                
+         15,80,595      branches                  #  212.507 M/sec                  
+            33,112      branch-misses             #    2.09% of all branches        
+         41,17,213      L1-dcache-loads           #  553.548 M/sec                  
+          1,95,982      L1-dcache-load-misses     #    4.76% of all L1-dcache hits    (73.35%)
+   <not supported>      L1-dcache-stores                                            
+   <not supported>      L1-dcache-store-misses                                      
+     <not counted>      L1-dcache-prefetches                                          (0.00%)
+   <not supported>      L1-dcache-prefetch-misses                                   
+     <not counted>      L1-icache-loads                                               (0.00%)
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+   <not supported>      L1-icache-prefetches                                        
+   <not supported>      L1-icache-prefetch-misses                                   
+
+      30.001645548 seconds time elapsed
+

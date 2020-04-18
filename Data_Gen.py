@@ -4,7 +4,10 @@ import sys
 def AVG(Array,Trials):
     Sum = 0
     for i in Array:
-        Sum+=float(i)
+        try:
+            Sum+=float(i)
+        except:
+            Sum+= 0
     return Sum/Trials
 
 def IC_Write(Instruction_count,NO_OF_TESTS):
@@ -83,7 +86,7 @@ if (sys.argv[0] == 1):
     origin_path = origin_path_neo4j
 else:
     origin_path = origin_path_postgres
-origin_path = origin_path_neo4j
+#origin_path = origin_path_neo4j
 IC = []
 IPC = []
 CR = []
@@ -109,8 +112,12 @@ for query in range(NO_OF_TESTS):
         Lines = File.readlines()
         # Data Collection - Split by !
         Instruction = '!'.join(Lines[8].strip().split()).split('!')
+        print(Instruction)
         Instruction_count.append(Instruction[0].replace(",",""))
-        Ins_per_cycle.append(Instruction[3])
+        try:
+            Ins_per_cycle.append(Instruction[3])
+        except:
+            Ins_per_cycle.append(0)
         Cache_Reference = '!'.join(Lines[9].strip().split()).split('!')
         Cache_References.append(Cache_Reference[0].replace(",",""))
         L1_dcache_load = '!'.join(Lines[13].strip().split()).split('!')

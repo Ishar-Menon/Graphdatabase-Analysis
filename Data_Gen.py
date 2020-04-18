@@ -132,13 +132,7 @@ for query in range(NO_OF_TESTS):
     print(Context_Switches)
     CS.append(Context_Switches)
     print('__________________________________________________________________________________________________________________')
-#print(IC)
 
-#IC_Avg = [(sum(i)/5) for i in IC]
-#IPC_Avg = [(sum(i)/5) for i in IPC]
-#CR_Avg = [(sum(i)/5) for i in CR]
-#LDL_Avg = [(sum(i)/5) for i in LDL]
-#LDM_Avg = [(sum(i)/5) for i in LDM]
 
 IC_Write(IC,5)
 IPC_Write(IPC,5)

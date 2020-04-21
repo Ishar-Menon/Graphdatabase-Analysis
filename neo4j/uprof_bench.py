@@ -17,7 +17,7 @@ for _ in range(NO_OF_TESTS):
     for i in range(NO_OF_CCX):
         # No of tests
         print("CCX {}".format(i))
-        uprof_cmd = '''sudo taskset -c 32-95 sudo AMDuProfPcm -m l3 -c ccx={} -d {} -o /home/user/Desktop/ycsbGraph/Graphdatabase-Analysis/neo4j/uprof_results/Test_{}/Trial_{}.csv &&'''.format(
+        uprof_cmd = '''sudo taskset -c 24-47,72-95 sudo AMDuProfPcm -m l3 -c ccx={} -d {} -o /home/user/Desktop/ycsbGraph/Graphdatabase-Analysis/neo4j/uprof_results/Test_{}/Trial_{}.csv &&'''.format(
             i, benchTime, _, i)
         client_cmd = 'sudo python client.py {}'.format(_ + 1)
 

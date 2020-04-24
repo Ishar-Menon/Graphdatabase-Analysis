@@ -1,0 +1,26 @@
+
+ Performance counter stats for process id '83328':
+
+        393.014093      task-clock (msec)         #    0.026 CPUs utilized          
+             4,343      context-switches          #    0.011 M/sec                  
+                44      cpu-migrations            #    0.112 K/sec                  
+               116      page-faults               #    0.295 K/sec                  
+       428,281,591      cycles                    #    1.090 GHz                      (71.67%)
+       281,922,139      instructions              #    0.66  insn per cycle                                              (82.27%)
+        29,586,628      cache-references          #   75.281 M/sec                    (67.53%)
+   <not supported>      cache-misses                                                
+        62,505,326      branches                  #  159.041 M/sec                    (72.39%)
+         1,648,126      branch-misses             #    2.64% of all branches          (74.01%)
+       167,273,575      L1-dcache-loads           #  425.617 M/sec                    (74.73%)
+        12,421,048      L1-dcache-load-misses     #    7.43% of all L1-dcache hits    (52.51%)
+   <not supported>      L1-dcache-stores                                            
+   <not supported>      L1-dcache-store-misses                                      
+         5,401,525      L1-dcache-prefetches      #   13.744 M/sec                    (41.21%)
+   <not supported>      L1-dcache-prefetch-misses                                   
+        76,397,954      L1-icache-loads           #  194.390 M/sec                    (34.57%)
+         2,470,614      L1-icache-load-misses                                         (29.90%)
+   <not supported>      L1-icache-prefetches                                        
+   <not supported>      L1-icache-prefetch-misses                                   
+
+      15.050439856 seconds time elapsed
+

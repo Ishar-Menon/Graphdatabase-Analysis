@@ -1,0 +1,26 @@
+
+ Performance counter stats for 'CPU(s) 0-11,48-59':
+
+     719994.576371      task-clock (msec)         #   23.995 CPUs utilized          
+            24,994      context-switches          #    0.035 K/sec                  
+               221      cpu-migrations            #    0.000 K/sec                  
+                22      page-faults               #    0.000 K/sec                  
+    22,163,312,490      cycles                    #    0.031 GHz                      (60.07%)
+     2,341,233,157      instructions              #    0.11  insn per cycle                                              (60.05%)
+       367,877,601      cache-references          #    0.511 M/sec                    (60.02%)
+   <not supported>      cache-misses                                                
+       481,393,556      branches                  #    0.669 M/sec                    (60.02%)
+        24,188,639      branch-misses             #    5.02% of all branches          (60.02%)
+     1,127,162,356      L1-dcache-loads           #    1.566 M/sec                    (60.02%)
+       130,957,086      L1-dcache-load-misses     #   11.62% of all L1-dcache hits    (60.01%)
+   <not supported>      L1-dcache-stores                                            
+   <not supported>      L1-dcache-store-misses                                      
+        16,823,611      L1-dcache-prefetches      #    0.023 M/sec                    (60.02%)
+   <not supported>      L1-dcache-prefetch-misses                                   
+     1,051,365,731      L1-icache-loads           #    1.460 M/sec                    (60.01%)
+        39,598,176      L1-icache-load-misses                                         (60.01%)
+   <not supported>      L1-icache-prefetches                                        
+   <not supported>      L1-icache-prefetch-misses                                   
+
+      30.006127746 seconds time elapsed
+

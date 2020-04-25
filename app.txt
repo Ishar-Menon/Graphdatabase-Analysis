@@ -1,4 +1,4 @@
-pid 83328's current affinity list: 0-11,48-59
+pid 83328's current affinity list: 24-47,72-95
 pid 83328's new affinity list: 0-11,48-59
 pid 83333's current affinity list: 0-11,48-59
 pid 83333's new affinity list: 0-11,48-59

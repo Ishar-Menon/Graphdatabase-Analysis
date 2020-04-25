@@ -1,0 +1,35 @@
+
+ Performance counter stats for 'CPU(s) 0-11,48-59':
+
+     720048.221789      task-clock (msec)         #   23.993 CPUs utilized          
+            24,167      context-switches          #    0.034 K/sec                  
+               150      cpu-migrations            #    0.000 K/sec                  
+                 2      page-faults               #    0.000 K/sec                  
+    20,024,413,011      cycles                    #    0.028 GHz                      (42.82%)
+     1,467,755,448      instructions              #    0.07  insn per cycle                                              (42.83%)
+       349,544,195      cache-references          #    0.485 M/sec                    (42.84%)
+   <not supported>      cache-misses                                                
+       308,697,659      branches                  #    0.429 M/sec                    (42.86%)
+        23,129,823      branch-misses             #    7.49% of all branches          (42.87%)
+   <not supported>      LLC-loads                                                   
+   <not supported>      LLC-load-misses                                             
+   <not supported>      LLC-stores                                                  
+   <not supported>      LLC-prefetches                                              
+             4,520      iTLB-loads                #    0.006 K/sec                    (42.88%)
+         1,321,430      iTLB-load-misses          # 29235.18% of all iTLB cache hits  (42.89%)
+        19,090,850      dTLB-loads                #    0.027 M/sec                    (42.90%)
+        14,044,980      dTLB-load-misses          #   73.57% of all dTLB cache hits   (42.89%)
+   <not supported>      dTLB-prefetch-misses                                        
+       767,649,471      L1-dcache-loads           #    1.066 M/sec                    (42.89%)
+       124,483,126      L1-dcache-load-misses     #   16.22% of all L1-dcache hits    (42.89%)
+   <not supported>      L1-dcache-stores                                            
+   <not supported>      L1-dcache-store-misses                                      
+        15,006,918      L1-dcache-prefetches      #    0.021 M/sec                    (42.88%)
+   <not supported>      L1-dcache-prefetch-misses                                   
+       881,271,764      L1-icache-loads           #    1.224 M/sec                    (42.85%)
+        38,326,206      L1-icache-load-misses                                         (42.85%)
+   <not supported>      L1-icache-prefetches                                        
+   <not supported>      L1-icache-prefetch-misses                                   
+
+      30.011077626 seconds time elapsed
+

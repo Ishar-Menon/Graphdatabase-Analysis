@@ -30,6 +30,6 @@ data_arr = data.split("\n")
 for i in data_arr:
     if (i == ''):
         break
-    temp = 'sudo taskset -cp 24-47,72-95 ' + i
+    temp = 'sudo taskset -a -cp 24-47,72-95 ' + i
     print(temp)
     os.system(temp)

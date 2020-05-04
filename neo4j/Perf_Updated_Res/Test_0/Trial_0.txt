@@ -1,5 +1,0 @@
-Error:
-Too many events are opened.
-Probably the maximum number of open file descriptors has been reached.
-Hint: Try again after reducing the number of events.
-Hint: Try increasing the limit with 'ulimit -n <limit>'

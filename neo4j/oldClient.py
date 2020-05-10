@@ -3,7 +3,7 @@ from neo4j import GraphDatabase
 
 # Initiate connection to neo4j
 uri = "bolt://10.10.1.201:7687"
-driver = GraphDatabase.driver(uri, auth=("neo4j", "1234"))
+driver = GraphDatabase.driver(uri, auth=("neo4j", "admin"))
 
 # Read queries
 file = open("Queries.txt", "r")

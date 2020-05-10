@@ -1,0 +1,26 @@
+
+ Performance counter stats for process id '58382,58384,58385,58386,58387,58388,58389':
+
+       2904.117160      task-clock (msec)         #    0.000 CPUs utilized          
+             7,003      context-switches          #    0.002 M/sec                  
+               179      cpu-migrations            #    0.062 K/sec                  
+          1,90,743      page-faults               #    0.066 M/sec                  
+    3,67,49,59,823      cycles                    #    1.265 GHz                      (59.25%)
+    3,13,57,70,065      instructions              #    0.85  insn per cycle                                              (61.28%)
+      24,01,91,626      cache-references          #   82.707 M/sec                    (63.08%)
+   <not supported>      cache-misses                                                
+      61,15,57,212      branches                  #  210.583 M/sec                    (62.33%)
+       1,51,55,825      branch-misses             #    2.48% of all branches          (60.33%)
+    1,57,39,36,160      L1-dcache-loads           #  541.967 M/sec                    (60.20%)
+       6,83,46,984      L1-dcache-load-misses     #    4.34% of all L1-dcache hits    (58.99%)
+   <not supported>      L1-dcache-stores                                            
+   <not supported>      L1-dcache-store-misses                                      
+       2,75,46,886      L1-dcache-prefetches      #    9.485 M/sec                    (57.72%)
+   <not supported>      L1-dcache-prefetch-misses                                   
+      88,18,19,179      L1-icache-loads           #  303.644 M/sec                    (58.35%)
+       4,12,67,578      L1-icache-load-misses                                         (58.48%)
+   <not supported>      L1-icache-prefetches                                        
+   <not supported>      L1-icache-prefetch-misses                                   
+
+    8539.498175759 seconds time elapsed
+

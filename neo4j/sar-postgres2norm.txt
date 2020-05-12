@@ -1,2 +1,0 @@
-Linux 4.15.0-99-generic (pc315) 	Tuesday 12 May 2020 	_x86_64_	(96 CPU)
-

@@ -1,0 +1,393 @@
+Linux 4.15.0-99-generic (pc315)         Friday 15 May 2020      _x86_64_        (96 CPU)
+
+03:51:46  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:51:47  IST      11      0.00      0.00      0.00      0.00      0.00    100.00
+03:51:47  IST      59      0.00      0.00      0.00      0.99      0.00     99.01
+
+03:51:46  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:51:47  IST      0.00     48.00   5160.00      0.00    475.00      0.00      0.00      0.00      0.00
+
+03:51:46  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:51:47  IST     11.00      0.00     11.00      0.00     96.00
+
+03:51:46  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:51:47  IST  75360908  90908920  56554644     42.87   1817820  13735232  47570632     35.50  42813696  11057604       408
+
+03:51:47  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:51:48  IST      11      1.00      0.00      1.00      3.00      0.00     95.00
+03:51:48  IST      59     11.11      0.00      2.02      9.09      0.00     77.78
+
+03:51:47  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:51:48  IST      0.00    504.00  50433.00      0.00   1067.00      0.00      0.00      0.00      0.00
+
+03:51:47  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:51:48  IST     36.00      0.00     36.00      0.00   1008.00
+
+03:51:47  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:51:48  IST  75182472  90730512  56733080     43.01   1817820  13735256  47592632     35.51  43004548  11046768       376
+
+03:51:48  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:51:49  IST      11     22.45      0.00      8.16      0.00      0.00     69.39
+03:51:49  IST      59     27.84      0.00      8.25     18.56      0.00     45.36
+
+03:51:48  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:51:49  IST      0.00   1328.00  35115.00      0.00   2141.00      0.00      0.00      0.00      0.00
+
+03:51:48  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:51:49  IST    131.00      0.00    131.00      0.00   2656.00
+
+03:51:48  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:51:49  IST  75174164  90722204  56741388     43.01   1817820  13735256  47598000     35.52  43038512  11021440      1240
+
+03:51:49  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:51:50  IST      11      0.00      0.00      0.00      0.00      0.00    100.00
+03:51:50  IST      59      0.00      0.00      0.00      0.00      0.00    100.00
+
+03:51:49  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:51:50  IST      0.00      0.00     47.00      0.00     74.00      0.00      0.00      0.00      0.00
+
+03:51:49  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:51:50  IST      0.00      0.00      0.00      0.00      0.00
+
+03:51:49  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:51:50  IST  75174992  90723032  56740560     43.01   1817820  13735256  47598000     35.52  43038416  11021436      1244
+
+03:51:50  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:51:51  IST      11      0.00      0.00      0.00      0.00      0.00    100.00
+03:51:51  IST      59      0.00      0.00      0.00      0.00      0.00    100.00
+
+03:51:50  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:51:51  IST      0.00    200.00     99.00      0.00     34.00      0.00      0.00      0.00      0.00
+
+03:51:50  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:51:51  IST      2.00      0.00      2.00      0.00    400.00
+
+03:51:50  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:51:51  IST  75175116  90723156  56740436     43.01   1817820  13735256  47598000     35.52  43038416  11021436      1244
+
+03:51:51  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:51:52  IST      11      1.00      0.00      0.00      0.00      0.00     99.00
+03:51:52  IST      59      0.00      0.00      0.00      0.00      0.00    100.00
+
+03:51:51  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:51:52  IST      0.00      0.00      3.00      0.00    230.00      0.00      0.00      0.00      0.00
+
+03:51:51  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:51:52  IST      0.00      0.00      0.00      0.00      0.00
+
+03:51:51  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:51:52  IST  75175364  90723404  56740188     43.01   1817820  13735260  47598000     35.52  43037808  11021436      1440
+
+03:51:52  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:51:53  IST      11      0.00      0.00      0.00      0.00      0.00    100.00
+03:51:53  IST      59      0.00      0.00      0.00      0.00      0.00    100.00
+
+03:51:52  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:51:53  IST      0.00      0.00    173.00      0.00     82.00      0.00      0.00      0.00      0.00
+
+03:51:52  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:51:53  IST      0.00      0.00      0.00      0.00      0.00
+
+03:51:52  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:51:53  IST  75175364  90723404  56740188     43.01   1817820  13735260  47598000     35.52  43037808  11021436      1440
+
+03:51:53  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:51:54  IST      11      0.00      0.00      0.00      0.00      0.00    100.00
+03:51:54  IST      59      0.00      0.00      0.00      0.00      0.00    100.00
+
+03:51:53  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:51:54  IST      0.00      0.00     91.09      0.00     42.57      0.00      0.00      0.00      0.00
+
+03:51:53  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:51:54  IST      0.00      0.00      0.00      0.00      0.00
+
+03:51:53  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:51:54  IST  75175756  90723796  56739796     43.01   1817820  13735260  47598000     35.52  43037812  11021436      1440
+
+03:51:54  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:51:55  IST      11      0.00      0.00      0.00      0.00      0.00    100.00
+03:51:55  IST      59     37.37      0.00      4.04     14.14      0.00     44.44
+
+03:51:54  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:51:55  IST      0.00    600.00  35909.00      0.00   1248.00      0.00      0.00      0.00      0.00
+
+03:51:54  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:51:55  IST     50.00      0.00     50.00      0.00   1200.00
+
+03:51:54  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:51:55  IST  75039260  90587292  56876292     43.12   1817820  13735248  47633872     35.54  43235912  10961068      1476
+
+03:51:55  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:51:56  IST      11      0.00      0.00      0.00      0.00      0.00    100.00
+03:51:56  IST      59     83.17      0.00     16.83      0.00      0.00      0.00
+
+03:51:55  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:51:56  IST      0.00    480.00   3617.00      0.00   6754.00      0.00      0.00      0.00      0.00
+
+03:51:55  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:51:56  IST     58.00      0.00     58.00      0.00    960.00
+
+03:51:55  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:51:56  IST  74952952  90599068  56962600     43.18   1817820  13831916  47615512     35.53  43224668  11055988     97752
+
+03:51:56  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:51:57  IST      11     44.00      0.00      8.00      0.00      0.00     48.00
+03:51:57  IST      59     42.00      0.00      6.00      0.00      0.00     52.00
+
+03:51:56  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:51:57  IST      4.00  54652.00    953.00      0.00  35349.00      0.00      0.00      0.00      0.00
+
+03:51:56  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:51:57  IST    176.00      1.00    175.00      8.00   2864.00
+
+03:51:56  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:51:57  IST  74980092  90597020  56935460     43.16   1817824  13800096  47621004     35.53  43236244  11017308      7272
+
+03:51:57  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:51:58  IST      11      2.02      0.00      4.04      1.01      0.00     92.93
+03:51:58  IST      59     76.77      0.00      9.09      0.00      0.00     14.14
+
+03:51:57  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:51:58  IST      0.00  11976.00   1234.00      0.00  12634.00      0.00      0.00      0.00      0.00
+
+03:51:57  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:51:58  IST    119.00      0.00    119.00      0.00 130392.00
+
+03:51:57  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:51:58  IST  74949412  90591460  56966140     43.18   1817824  13826980  47621004     35.53  43272280  11012632     65284
+
+03:51:58  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:51:59  IST      11     32.00      0.00      5.00      0.00      0.00     63.00
+03:51:59  IST      59     56.00      0.00      8.00      0.00      0.00     36.00
+
+03:51:58  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:51:59  IST      0.00      0.00    886.00      0.00  32834.00      0.00      0.00      0.00      0.00
+
+03:51:58  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:51:59  IST      0.00      0.00      0.00      0.00      0.00
+
+03:51:58  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:51:59  IST  74969388  90588344  56946164     43.17   1817824  13801592  47626436     35.54  43281000  10982696     40456
+
+03:51:59  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:52:00  IST      11     82.00      0.00     12.00      0.00      0.00      6.00
+03:52:00  IST      59      5.94      0.00      0.99      0.00      0.00     93.07
+
+03:51:59  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:52:00  IST      0.00      0.00    476.00      0.00  14873.00      0.00      0.00      0.00      0.00
+
+03:51:59  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:52:00  IST      0.00      0.00      0.00      0.00      0.00
+
+03:51:59  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:52:00  IST  74939500  90587432  56976052     43.19   1817824  13832516  47626436     35.54  43282876  11012928     70704
+
+03:52:00  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:52:01  IST      11     72.00      0.00     16.00      0.00      0.00     12.00
+03:52:01  IST      59     10.10      0.00      1.01      0.00      0.00     88.89
+
+03:52:00  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:52:01  IST      0.00      0.00    486.00      0.00  14538.00      0.00      0.00      0.00      0.00
+
+03:52:00  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:52:01  IST      0.00      0.00      0.00      0.00      0.00
+
+03:52:00  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:52:01  IST  74887860  90585320  57027692     43.23   1817824  13879636  47626436     35.54  43284044  11059972    117760
+
+03:52:01  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:52:02  IST      11      7.00      0.00      2.00      0.00      0.00     91.00
+03:52:02  IST      59     80.00      0.00     11.00      0.00      0.00      9.00
+
+03:52:01  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:52:02  IST      0.00    140.00    764.00      0.00  39060.00      0.00      0.00      0.00      0.00
+
+03:52:01  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:52:02  IST      2.00      0.00      2.00      0.00    280.00
+
+03:52:01  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:52:02  IST  74967944  90582940  56947608     43.17   1817824  13800660  47626436     35.54  43287344  10981340     39184
+
+03:52:02  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:52:03  IST      11      0.00      0.00      0.00      0.00      0.00    100.00
+03:52:03  IST      59     88.00      0.00     12.00      0.00      0.00      0.00
+
+03:52:02  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:52:03  IST      0.00      0.00    552.00      0.00     83.00      0.00      0.00      0.00      0.00
+
+03:52:02  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:52:03  IST      0.00      0.00      0.00      0.00      0.00
+
+03:52:02  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:52:03  IST  74865308  90581776  57050244     43.25   1817824  13899184  47626436     35.54  43289120  11079740    137588
+
+03:52:03  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:52:04  IST      11     40.00      0.00      5.00      0.00      0.00     55.00
+03:52:04  IST      59     38.00      0.00      9.00      8.00      0.00     45.00
+
+03:52:03  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:52:04  IST      0.00    400.00    742.00      0.00  61376.00      0.00      0.00      0.00      0.00
+
+03:52:03  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:52:04  IST     28.00      0.00     28.00      0.00    800.00
+
+03:52:03  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:52:04  IST  75035260  90584148  56880292     43.12   1817824  13735712  47624748     35.54  43286636  10915700       604
+
+03:52:04  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:52:05  IST      11     18.81      0.00      7.92      0.00      0.00     73.27
+03:52:05  IST      59     57.14      0.00      9.18     21.43      0.00     12.24
+
+03:52:04  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:52:05  IST      0.00   1000.00  16201.00      0.00   3340.00      0.00      0.00      0.00      0.00
+
+03:52:04  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:52:05  IST    113.00      0.00    113.00      0.00   2000.00
+
+03:52:04  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:52:05  IST  75023844  90572732  56891708     43.13   1817824  13735260  47630112     35.54  43307448  10905828      1056
+
+03:52:05  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:52:06  IST      11     35.71      0.00      4.08      0.00      0.00     60.20
+03:52:06  IST      59     53.47      0.00     23.76      0.00      0.00     22.77
+
+03:52:05  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:52:06  IST      0.00      0.00   4517.00      0.00   1453.00      0.00      0.00      0.00      0.00
+
+03:52:05  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:52:06  IST      0.00      0.00      0.00      0.00      0.00
+
+03:52:05  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:52:06  IST  75021944  90570372  56893608     43.13   1817824  13735272  47634084     35.54  43344884  10870680      1132
+
+03:52:06  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:52:07  IST      11      0.00      0.00      0.00      0.00      0.00    100.00
+03:52:07  IST      59     10.89      0.00      1.98      0.00      0.00     87.13
+
+03:52:06  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:52:07  IST      0.00    152.00   1406.00      0.00    721.00      0.00      0.00      0.00      0.00
+
+03:52:06  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:52:07  IST      2.00      0.00      2.00      0.00    304.00
+
+03:52:06  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:52:07  IST  75018224  90566652  56897328     43.13   1817824  13735280  47634084     35.54  43348588  10870164      1148
+
+03:52:07  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:52:08  IST      11      0.00      0.00      0.00      0.00      0.00    100.00
+03:52:08  IST      59      0.00      0.00      0.00      0.00      0.00    100.00
+
+03:52:07  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:52:08  IST      0.00      0.00      1.00      0.00     30.00      0.00      0.00      0.00      0.00
+
+03:52:07  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:52:08  IST      0.00      0.00      0.00      0.00      0.00
+
+03:52:07  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:52:08  IST  75018136  90566564  56897416     43.13   1817824  13735284  47634084     35.54  43348796  10870108      1232
+
+03:52:08  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:52:09  IST      11      0.00      0.00      0.00      0.00      0.00    100.00
+03:52:09  IST      59      0.00      0.00      0.00      0.00      0.00    100.00
+
+03:52:08  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:52:09  IST      0.00      0.00      1.00      0.00     31.00      0.00      0.00      0.00      0.00
+
+03:52:08  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:52:09  IST      0.00      0.00      0.00      0.00      0.00
+
+03:52:08  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:52:09  IST  75018136  90566564  56897416     43.13   1817824  13735284  47634084     35.54  43348796  10870108      1232
+
+03:52:09  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:52:10  IST      11      0.00      0.00      0.00      0.00      0.00    100.00
+03:52:10  IST      59      0.00      0.00      0.00      0.00      0.00    100.00
+
+03:52:09  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:52:10  IST      0.00      0.00      2.00      0.00     46.00      0.00      0.00      0.00      0.00
+
+03:52:09  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:52:10  IST      0.00      0.00      0.00      0.00      0.00
+
+03:52:09  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:52:10  IST  75018136  90566564  56897416     43.13   1817824  13735284  47634084     35.54  43348796  10870108      1232
+
+03:52:10  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:52:11  IST      11      0.00      0.00      0.00      0.00      0.00    100.00
+03:52:11  IST      59      0.00      0.00      0.00      0.00      0.00    100.00
+
+03:52:10  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:52:11  IST      0.00      0.00    106.00      0.00     42.00      0.00      0.00      0.00      0.00
+
+03:52:10  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:52:11  IST      0.00      0.00      0.00      0.00      0.00
+
+03:52:10  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:52:11  IST  75018168  90566596  56897384     43.13   1817824  13735284  47634084     35.54  43348796  10870108      1232
+
+03:52:11  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:52:12  IST      11      0.00      0.00      0.00      0.00      0.00    100.00
+03:52:12  IST      59      0.00      0.00      1.01      0.00      0.00     98.99
+
+03:52:11  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:52:12  IST      0.00     76.00   1125.00      0.00  92387.00      0.00      0.00      0.00      0.00
+
+03:52:11  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:52:12  IST      5.00      0.00      5.00      0.00    152.00
+
+03:52:11  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:52:12  IST  75380064  90928504  56535488     42.86   1817824  13735300  44272320     33.04  42987180  10870104      1380
+
+03:52:12  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:52:13  IST      11      0.99      0.00      0.00      0.00      0.00     99.01
+03:52:13  IST      59      0.99      0.00      0.00      0.00      0.00     99.01
+
+03:52:12  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:52:13  IST      0.00      0.00    175.00      0.00     84.00      0.00      0.00      0.00      0.00
+
+03:52:12  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:52:13  IST      0.00      0.00      0.00      0.00      0.00
+
+03:52:12  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:52:13  IST  75380188  90928628  56535364     42.86   1817824  13735300  44272320     33.04  42987180  10870104      1380
+
+03:52:13  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:52:14  IST      11      0.00      0.00      0.00      0.00      0.00    100.00
+03:52:14  IST      59      0.00      0.00      0.00      0.00      0.00    100.00
+
+03:52:13  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:52:14  IST      0.00      0.00     89.00      0.00     46.00      0.00      0.00      0.00      0.00
+
+03:52:13  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:52:14  IST      0.00      0.00      0.00      0.00      0.00
+
+03:52:13  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:52:14  IST  75381424  90929832  56534128     42.86   1817824  13735268  44272320     33.04  42986656  10870072      1340
+
+03:52:14  IST     CPU     %user     %nice   %system   %iowait    %steal     %idle
+03:52:15  IST      11      0.00      0.00      0.00      0.00      0.00    100.00
+03:52:15  IST      59      0.00      0.00      0.00      0.00      0.00    100.00
+
+03:52:14  IST  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+03:52:15  IST      0.00      0.00     83.00      0.00     40.00      0.00      0.00      0.00      0.00
+
+03:52:14  IST       tps      rtps      wtps   bread/s   bwrtn/s
+03:52:15  IST      0.00      0.00      0.00      0.00      0.00
+
+03:52:14  IST kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+03:52:15  IST  75381568  90929976  56533984     42.86   1817824  13735268  44272320     33.04  42986656  10870072      1340
+
+
+
+Average:        CPU     %user     %nice   %system   %iowait    %steal     %idle
+Average:         11     12.36      0.00      2.52      0.14      0.00     84.98
+Average:         59     23.39      0.00      4.28      2.45      0.00     69.88
+
+Average:     pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+Average:         0.14   2466.60   5530.75      0.00  11069.11      0.00      0.00      0.00      0.00
+
+Average:          tps      rtps      wtps   bread/s   bwrtn/s
+Average:        25.27      0.03     25.23      0.28   4933.20
+
+Average:    kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+Average:     75097964  90674352  56817588     43.07   1817823  13762540  47155982     35.19  43174859  10962752     20711

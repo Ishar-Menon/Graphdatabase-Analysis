@@ -1,9 +1,9 @@
 import csv
 
 origin_path = 'D:\\College\\PES\\Semester-6\\Cloud - Computing\\Graphdatabase-Analysis\\neo4j\\uProf_LDBC_L3_cache\\After_Indexing\\'
-File = open(origin_path +'Test2.txt',"r")
+File = open(origin_path +'Test4.txt',"r")
 lines_ret_ins = File.readlines()
-CSV_File = 'T2.csv'
+CSV_File = 'T4.csv'
 Headers = ['CoreId','DTLB misses per 1000','L1 ITLB miss,L2 ITLB hit per 1000','L1 ITLB miss,L2 ITLB miss per 1000','Retired Instructions']
 #print(len(lines_ret_ins),len(lines_ins))
 
